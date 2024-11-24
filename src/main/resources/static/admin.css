@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    background-image: url("https://c0.wallpaperflare.com/preview/955/887/636/music-sound-player-headphone.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #333; /* Text color for better contrast */
+}
+
+h2 {
+    font-size: 28px;
+    background-color: #000066;
+    color: #FFFF66;
+    text-align: center;
+    padding: 15px;
+    border-radius: 30px;
+    margin: 20px auto;
+    max-width: 500px;
+    font-family: "Cambria", "Times New Roman", serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Modern shadow effect */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
+    cursor: pointer;
+}
+
+h2:hover {
+    color: #ff6600; /* Accent color on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center; /* Center buttons horizontally */
+    align-items: center;
+    margin-top: 50px;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 20px; /* Spacing between buttons */
+}
+
+form {
+    display: inline-block;
+    margin: 0;
+}
+
+input[type="submit"] {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Add hover animation */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Modern button shadow */
+}
+
+input[type="submit"]:hover {
+    background-color: #e55e00;
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 24px;
+        padding: 10px;
+    }
+
+    input[type="submit"] {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    .buttons-container {
+        flex-direction: column; /* Stack buttons vertically */
+        gap: 15px; /* Adjust gap for smaller screens */
+    }
+}

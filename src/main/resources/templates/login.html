@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>LOGIN PAGE</title>
+    <link rel="stylesheet" th:href="@{/login.css}">
+    <link rel="stylesheet" th:href="@{/bar.css}">
+</head>
+<body>
+    <!-- Navigation bar -->
+    <div class="navbar">
+        <a th:href="@{/home}">Home</a>
+        <a th:href="@{/about}">About</a>
+        <a th:href="@{/contact}">Contact</a>
+        <a th:href="@{/login}">Login</a>
+        <a th:href="@{/registration}">Register</a>
+        <a th:href="@{/logout}">Logout</a>
+    </div>
+
+    <form th:action="@{/validate}" method="post">
+        <h2>User Login</h2>
+        <label>Email:</label>
+        <input type="email" name="email" required> <br><br>
+        <label>Password:</label>
+        <input type="password" name="password" required> <br><br>
+        <input type="submit" value="Login">
+    </form>
+
+    <!-- Footer bar -->
+    <div class="footer">
+        <p>&copy; 2024 BeatBox Music Streaming App. All rights reserved.</p>
+    </div>
+</body>
+</html>

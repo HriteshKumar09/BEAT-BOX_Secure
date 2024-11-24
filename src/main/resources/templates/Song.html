@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADD SONG</title>
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/bar.css">
+    <link rel="stylesheet" href="/newsong.css">
+</head>
+<body>
+
+    <!-- Navigation bar -->
+    <div class="navbar">
+        <a href="/home">Home</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+        <a href="/login">Login</a>
+        <a href="/registration">Register</a>
+        <a href="/logout">Logout</a>
+    </div>
+
+    <div class="content-container">
+        <h2>Song Details</h2>
+        
+        <form action="/addsongs" method="post">
+            <div class="form-group">
+                <label for="name">Song Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="artist">Song Artist:</label>
+                <input type="text" id="artist" name="artist" required>
+            </div>
+
+            <div class="form-group">
+                <label for="genre">Song Genre:</label>
+                <input type="text" id="genre" name="genre" required>
+            </div>
+
+            <div class="form-group">
+                <label for="link">Song Link:</label>
+                <input type="text" id="link" name="link" required>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="ADD SONG">
+            </div>
+        </form>
+    </div>
+
+    <!-- Footer bar -->
+    <div class="footer">
+        <p>&copy; 2024 BeatBox Music Streaming App. All rights reserved.</p>
+    </div>
+
+</body>
+</html>

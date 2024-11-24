@@ -1,0 +1,152 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url('https://example.com/background-image.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+/* Navbar */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px 50px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 16px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #FFCC00;
+}
+
+/* Form Container */
+form {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 450px;
+    margin: 100px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Form Title */
+form h2 {
+    font-size: 28px;
+    color: #FFCC00;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+/* Input Fields */
+form label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+    color: #ddd;
+}
+
+form input[type="email"],
+form input[type="password"] {
+    width: 100%;
+    padding: 14px;
+    margin: 12px 0;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #222;
+    color: #fff;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+form input[type="email"]:focus,
+form input[type="password"]:focus {
+    border-color: #FFCC00;
+    outline: none;
+}
+
+/* Submit Button */
+form input[type="submit"] {
+    background-color: #FFCC00;
+    color: #121212;
+    padding: 12px 0;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #FF9900;
+    transform: scale(1.05);
+}
+
+/* Footer */
+.footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding: 20px;
+    }
+
+    form {
+        width: 90%;
+        max-width: 400px;
+        padding: 30px;
+    }
+
+    form h2 {
+        font-size: 24px;
+    }
+
+    form input[type="email"],
+    form input[type="password"] {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    form input[type="submit"] {
+        font-size: 14px;
+        padding: 12px 0;
+    }
+
+    .footer {
+        font-size: 12px;
+    }
+}

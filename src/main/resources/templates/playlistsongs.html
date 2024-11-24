@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="displayplaylist.css">
+    <link rel="stylesheet" th:href="@{/bar.css}">
+    <title>List of Playlists</title>
+</head>
+<body>
+    <!-- Navigation bar -->
+    <div class="navbar">
+        <a th:href="@{/home}">Home</a>
+        <a th:href="@{/about}">About</a>
+        <a th:href="@{/contact}">Contact</a>
+        <a href="login">Login</a>
+        <a href="registration">Register</a>
+        <a th:href="@{/logout}">Logout</a>
+    </div>
+
+    <!-- Page Title -->
+    <h2 class="page-title">List of Playlists</h2>
+
+    <!-- Playlist Table -->
+    <div class="playlist-container">
+        <table class="playlist-table">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Songs</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Iterate over all playlists -->
+                <tr th:each="playlist : ${allplaylist}">
+                    <td th:text="${playlist.id}"></td>
+                    <td th:text="${playlist.name}"></td>
+                    <td>
+                        <ul class="song-list">
+                            <!-- Iterate over songs in each playlist -->
+                            <li th:each="song : ${playlist.songs}">
+                                <span th:text="${song.name}"></span>
+                                <audio controls>
+                                    <source th:src="${song.link}" type="audio/mpeg">
+                                </audio>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Footer bar -->
+    <div class="footer">
+        <p>&copy; 2024 BeatBox Music Streaming App. All rights reserved.</p>
+    </div>
+</body>
+</html>

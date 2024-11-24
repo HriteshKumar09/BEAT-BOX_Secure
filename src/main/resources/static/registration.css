@@ -1,0 +1,202 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url('https://example.com/background-image.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+/* Navbar */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px 50px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 16px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #FFCC00;
+}
+
+/* Container for the registration form */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 140px); /* Full height minus navbar and footer */
+    margin-top: 0px; /* Reduced margin to move the form up */
+    margin-bottom: 80px; /* Footer height */
+    box-sizing: border-box;
+}
+/* Registration form styling */
+/* Registration form styling */
+form {
+    background: #121212; /* Darker background for form */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+    width: 400px;
+    margin: 0 auto; /* Center the form horizontally */
+    text-align: left; /* Align text to the left for proper spacing */
+}
+
+form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #00e5ff;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form textarea {
+    width: 100%; /* Ensure inputs span the full form width */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background: #1a1a1a;
+    color: white;
+    box-sizing: border-box; /* Prevent overflow issues */
+}
+
+form input[type="radio"] {
+    margin-right: 10px;
+}
+
+form button {
+    width: 100%; /* Ensure the button matches input widths */
+    padding: 10px;
+    background: #00e5ff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form button:hover {
+    background: #00b8cc;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    form {
+        width: 90%; /* Make the form more responsive */
+    }
+}
+
+/* Footer */
+.footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding: 20px;
+    }
+
+    form {
+        width: 90%;
+        max-width: 380px;
+        padding: 20px 25px;
+    }
+
+    form h2 {
+        font-size: 22px;
+    }
+
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="password"],
+    form textarea {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    form input[type="submit"] {
+        font-size: 14px;
+        padding: 12px 0;
+    }
+
+/* Footer */
+.footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding: 20px;
+    }
+
+    form {
+        width: 90%;
+        max-width: 400px;
+        padding: 30px;
+    }
+
+    form h2 {
+        font-size: 24px;
+    }
+
+    form input[type="email"],
+    form input[type="password"] {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    form input[type="submit"] {
+        font-size: 14px;
+        padding: 12px 0;
+    }
+
+    .footer {
+        font-size: 12px;
+    }
+}
+}

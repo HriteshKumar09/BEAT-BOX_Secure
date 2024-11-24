@@ -1,0 +1,220 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url('https://example.com/background-image.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+}
+
+h1, h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+/* Navbar */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px 50px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 16px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #FFCC00;
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #FFCC00;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    font-size: 16px;
+    color: #ddd;
+    margin-bottom: 30px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.contact-item {
+    background-color: #444;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.contact-item i {
+    font-size: 22px;
+    color: #FFCC00;
+}
+
+.contact-item p {
+    font-size: 14px;
+    color: #ddd;
+    margin-top: 10px;
+}
+
+.contact-item a {
+    color: #FFCC00;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+    color: #FF9900;
+}
+
+/* Contact Form */
+form {
+    background-color: #444;
+    padding: 20px; /* Increased padding for better space */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    width: 100%; /* Full width within the container */
+    max-width: 400px; /* Smaller max-width for compactness */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    box-sizing: border-box; /* Prevent overflow by including padding in the width */
+}
+
+form label {
+    font-size: 14px;
+    color: #FFCC00;
+    margin-bottom: 5px;
+    display: block;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px; /* Added padding inside inputs and textarea */
+    margin: 8px 0; /* Reduced margin */
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #121212;
+    color: #fff;
+    font-size: 14px;
+    box-sizing: border-box; /* Ensures padding doesn't cause overflow */
+}
+
+form button {
+    background-color: #FFCC00;
+    padding: 10px 14px; /* Added padding */
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-top: 10px; /* Reduced margin */
+    width: 100%;
+}
+
+form button:hover {
+    background-color: #FF9900;
+    transform: translateY(-3px);
+}
+
+/* "Send us a message" section */
+.contact-section h3 {
+    font-size: 18px;  /* Smaller font size */
+    font-weight: 600;
+    color: #FFCC00;
+    margin-top: 15px; /* Reduced margin */
+}
+
+/* Footer */
+.footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-item {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    form {
+        width: 90%;
+        max-width: 350px;  /* Further reduce size on mobile */
+    }
+
+    form label,
+    form input,
+    form textarea {
+        font-size: 12px;  /* Smaller font size */
+    }
+
+    form button {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+
+    .contact-section h3 {
+        font-size: 16px;
+    }
+
+    .footer {
+        font-size: 12px;
+    }
+}

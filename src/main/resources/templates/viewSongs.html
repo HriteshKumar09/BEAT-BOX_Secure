@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" href="displayplaylist.css">
+    <link rel="stylesheet" th:href="@{/bar.css}">
+    <title>Playlist</title>
+</head>
+<body>
+    <!-- Navigation bar -->
+    <div class="navbar">
+        <a th:href="@{/home}">Home</a>
+        <a th:href="@{/about}">About</a>
+        <a th:href="@{/contact}">Contact</a>
+        <a th:href="@{/login}">Login</a>
+        <a th:href="@{/registration}">Register</a>
+        <a th:href="@{/logout}">Logout</a>
+    </div>
+
+    <!-- Songs Table -->
+    <div class="container">
+        <h1>Playlist</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Artist</th>
+                    <th>Genre</th>
+                    <th>Play</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="song : ${songs}">
+                    <td th:text="${song.name}"></td>
+                    <td th:text="${song.artist}"></td>
+                    <td th:text="${song.genre}"></td>
+                    <td>
+                        <!-- Modern Audio Player with Controls -->
+                        <audio controls>
+                            <source th:src="@{|${song.link}|}" type="audio/mp3">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Footer bar -->
+    <div class="footer">
+        <p>&copy; 2024 BeatBox Music Streaming App. All rights reserved.</p>
+    </div>
+</body>
+</html>

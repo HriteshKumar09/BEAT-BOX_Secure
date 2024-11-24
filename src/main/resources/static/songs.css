@@ -1,0 +1,145 @@
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    background-image: url("https://c0.wallpaperflare.com/preview/955/887/636/music-sound-player-headphone.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #333; Text color for better contrast
+} */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    background-image: url("https://source.unsplash.com/1600x900/?music");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #333; /* Ensuring text contrast */
+}
+
+form {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent form */
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Modern shadow effect */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #00CCCC; /* Accent border */
+}
+
+label {
+    width: 100%;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 14px;
+    color: #333;
+}
+
+input[type="text"] {
+    width: 90%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    font-size: 14px;
+    color: #333;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Inner shadow for depth */
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #00CCCC; /* Highlight on focus */
+    box-shadow: 0 0 6px #00CCCC;
+}
+
+input[type="submit"] {
+    padding: 12px 25px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+input[type="submit"]:hover {
+    background-color: #555; /* Lighter hover effect */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.4); /* Enhance shadow */
+}
+
+.song-item {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #333;
+}
+
+.song-item input[type="checkbox"] {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+h2 {
+    font-size: 26px;
+    background-color: #000066;
+    color: #FFFF66;
+    text-align: center;
+    padding: 15px;
+    border-radius: 50px;
+    margin: 30px auto;
+    max-width: 400px;
+    font-family: "Cambria", "Times New Roman", serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow for modern depth */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth hover animations */
+    cursor: pointer;
+}
+
+h2:hover {
+    color: #FF6600; /* Accent color on hover */
+    transform: translateY(-5px); /* Slight lift effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Enhanced shadow on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    form {
+        width: 90%;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 22px;
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    input[type="text"] {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    input[type="submit"] {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    .song-item {
+        font-size: 12px;
+    }
+}

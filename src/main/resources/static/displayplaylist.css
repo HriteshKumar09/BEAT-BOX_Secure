@@ -1,0 +1,123 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #4b6cb7, #182848);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 18px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 25px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: color 0.3s ease-in-out, transform 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #ffd700;
+    transform: scale(1.1);
+}
+
+/* Page Title */
+.page-title {
+    text-align: center;
+    color: #ffd700;
+    font-size: 32px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+/* Playlist Table */
+.playlist-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.playlist-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.playlist-table th, .playlist-table td {
+    padding: 12px 20px;
+    text-align: left;
+}
+
+.playlist-table th {
+    background-color: #4b6cb7;
+    color: #fff;
+}
+
+.playlist-table td {
+    border-bottom: 1px solid #3e3e3e;
+}
+
+.playlist-table tr:hover {
+    background-color: #2e3c56;
+}
+
+.song-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.song-list li {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.song-list li span {
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.song-list li audio {
+    margin-left: 20px;
+    width: 200px;
+    border-radius: 5px;
+}
+
+/* Footer */
+.footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+}
